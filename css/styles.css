@@ -1,0 +1,331 @@
+/* NAVBAR */
+nav {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; }
+
+/* HERO */
+h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #ffffff;
+  border-left: 1px solid #ffffff;
+  animation: escribir 2s steps(30) infinite alternate; }
+
+@keyframes escribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+
+/* FORMULARIOS */
+form input, form textarea {
+  font-style: normal;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding: 4px;
+  margin: 0;
+  border: 1px solid #D4D2D1; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+.form-control {
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  border-color: #ffffff;
+  border-width: 0 0 1px 0;
+  border-style: none none solid none;
+  box-shadow: none; }
+
+.formlabel {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 0; }
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: #603DE0;
+  color: #ffffff;
+  border-color: #EA4138; }
+
+textarea {
+  resize: none; }
+
+/* DESTACADO BLOG */
+.destacado {
+  background-color: #603DE0;
+  border-radius: 10px;
+  width: 100px;
+  height: auto; }
+  .destacado p {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center; }
+
+/* TEXTOS COMUNES */
+.homeTitulo {
+  font-weight: bolder;
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #603DE0; }
+
+h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #603DE0; }
+
+h2 {
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #EA4138; }
+  h2 a {
+    color: #EA4138; }
+  h2 a:link {
+    text-decoration: none; }
+  h2 a:hover {
+    color: #603DE0; }
+
+.parrafoFondoClaro {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  color: #000000; }
+
+.tituloFondoClaro {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  color: #603DE0;
+  margin-top: 20px; }
+
+.tituloFondoOscuro {
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; }
+
+.parrafoFondoOscuro {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  color: #ffffff; }
+
+.card__titulo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  color: #000000;
+  padding-top: 10px; }
+
+.card__body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  color: #272728; }
+
+.card {
+  border-color: transparent;
+  padding: 10px; }
+
+/* BACKROUND PARALLAX */
+.parallax {
+  background-image: url(../assets/backround.svg);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* BUTTONS */
+/* BUTTON LIGHT */
+.buttonLight {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  color: #EA4138;
+  border-color: #EA4138; }
+
+.buttonLight:hover {
+  color: #ffffff;
+  background-color: #EA4138;
+  border-color: #EA4138; }
+
+.buttonLight:visited {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  color: #EA4138;
+  border-color: #EA4138; }
+
+/* BUTTON DARK */
+.buttonDark {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  color: #ffffff;
+  border-color: #ffffff; }
+
+.buttonDark:hover {
+  color: #ffffff;
+  background-color: #EA4138;
+  border-color: #EA4138; }
+
+.buttonDark:visited {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  color: #ffffff;
+  border-color: #ffffff; }
+
+/* BUTTON BODY */
+.bodyButton {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  border-color: transparent;
+  padding: 0px; }
+  .bodyButton a:link {
+    text-decoration: none;
+    color: #603DE0; }
+  .bodyButton a:hover {
+    color: #EA4138; }
+
+/* BUTTON SECONDARY Utilizado para Cards*/
+.secondaryButton {
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  border-color: #603DE0;
+  color: #603DE0; }
+  .secondaryButton a:link {
+    color: #603DE0;
+    text-decoration: none; }
+
+.secondaryButton:hover {
+  color: #ffffff;
+  border-color: #603DE0;
+  background-color: #603DE0;
+  text-decoration: none; }
+
+/* BACKROUNDS */
+.greyBackround {
+  background-color: #F9F9F9; }
+
+.whiteBackround {
+  background-color: #ffffff; }
+
+.backroundForm {
+  background-color: #603DE0;
+  color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 5px -10px 10px lightgrey;
+  padding: 25px;
+  padding-top: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
+.darkBackround {
+  background-color: #603DE0; }
+
+.media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
+/* FOOTER */
+footer {
+  padding: 20px 10px 0px 10px;
+  background-color: #603DE0; }
+  footer h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px; }
+  footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    color: #ffffff; }
+
+.footer-copyright {
+  padding: 20px !important;
+  text-align: center; }
+
+footer li {
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  color: #ffffff;
+  font-size: 13px; }
+
+/* FOOTER Pseudoclasses */
+footer a:link {
+  color: #ffffff;
+  text-decoration: none; }
+
+footer a:visited {
+  color: #ffffff; }
+
+footer a:hover {
+  color: #EA4138; }

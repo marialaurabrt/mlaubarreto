@@ -1,0 +1,405 @@
+$titlecolor-light: #603DE0;
+$titlecolor-dark: #ffffff;
+$subtitlecolor-light: #000000;
+$subtitlecolor-dark: #ffffff;
+
+$bodycolor-light: #000000;
+$bodycolor-dark: #ffffff;
+
+$bodycolor-highlight: #EA4138;
+$bodycolor-secondary: #603DE0;
+
+$backroundcolor-light: #ffffff;
+$backroundcolor-grey: #F9F9F9;
+$backroundcolor-dark: #603DE0;
+
+$font-sizes: ('xsmall': 13px, 'small': 16px, 'medium': 20px, 'large': 30px, 'xlarge': 45px);
+
+/* NAVBAR */
+
+nav{
+    font-size: map-get($map: $font-sizes, $key: xsmall);
+    font-family: 'Roboto', sans-serif;
+    background-color: $backroundcolor-light;
+}
+
+/* HERO */
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #ffffff;
+    border-left: 1px solid #ffffff;
+    animation: escribir 2s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+
+/* FORMULARIOS */
+
+form input, form textarea{
+    font-style: normal;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left; 
+    padding: 4px;
+    margin: 0;
+    border: 1px solid #D4D2D1;
+}
+
+fieldset{
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.form-control {
+    background-color: transparent;
+    color: white;
+	border-radius: 0;
+	border-color: #ffffff;
+   	border-width: 0 0 1px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+
+.formlabel{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #603DE0;
+    color: #ffffff;
+    border-color: #EA4138;
+}
+
+textarea{
+    resize: none;
+}
+
+
+/* DESTACADO BLOG */
+
+.destacado{
+    background-color: $backroundcolor-dark;
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+
+    p{
+        font-size: map-get($map: $font-sizes, $key: xsmall);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $bodycolor-dark;
+        text-align: center;
+    }
+}
+
+
+/* TEXTOS COMUNES */
+
+.homeTitulo{
+    font-weight: bolder;
+    font-size: map-get($map: $font-sizes, $key: xlarge);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: $titlecolor-light;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: map-get($map: $font-sizes, $key: large);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: $titlecolor-light;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: map-get($map: $font-sizes, $key: medium);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: $bodycolor-highlight;
+
+    a{
+        color: $bodycolor-highlight;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $bodycolor-secondary;
+    }
+
+}
+
+.parrafoFondoClaro{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: map-get($map: $font-sizes, $key: small);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    color: $bodycolor-light;
+
+}
+
+.tituloFondoClaro{
+    font-style: normal;
+    font-weight: bold;
+    font-size: map-get($map: $font-sizes, $key: large);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    line-height: 1.2;
+    color: $titlecolor-light;
+    margin-top: 20px;
+}
+
+.tituloFondoOscuro{
+    font-weight: bolder;
+    font-size: map-get($map: $font-sizes, $key: large);
+    font-family: 'Poppins', sans-serif;
+    color: $titlecolor-dark;
+
+}
+
+.parrafoFondoOscuro{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: map-get($map: $font-sizes, $key: small);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    color: $bodycolor-dark;
+}
+
+.card__titulo{
+    font-style: normal;
+    font-weight: normal;
+    font-size: map-get($map: $font-sizes, $key: medium);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    line-height: 1.2;
+    color: $subtitlecolor-light;
+    padding-top: 10px;
+}
+
+.card__body{
+    font-style: normal;
+    font-weight: normal;
+    font-size: map-get($map: $font-sizes, $key: xsmall);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 1.2;
+    color: #272728;
+}
+
+.card{
+    border-color: transparent;
+    padding: 10px;
+}
+
+/* BACKROUND PARALLAX */
+
+.parallax{
+    background-image: url(../assets/backround.svg);
+    height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* BUTTONS */
+
+@mixin button {
+    background-color: transparent;
+    border: 1px solid;
+    font-size: map-get($map: $font-sizes, $key: xsmall);
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+/* BUTTON LIGHT */ 
+
+.buttonLight {
+    @include button;
+    color: $bodycolor-highlight;
+    border-color: $bodycolor-highlight;
+}
+
+.buttonLight:hover {
+    color: $bodycolor-dark;
+    background-color: $bodycolor-highlight;
+    border-color: $bodycolor-highlight;
+}
+
+.buttonLight:visited {
+    @include button;
+    color: $bodycolor-highlight;
+    border-color: $bodycolor-highlight;
+}
+
+/* BUTTON DARK */ 
+
+.buttonDark {
+    @include button;
+    color: $bodycolor-dark;
+    border-color: $bodycolor-dark;
+}
+
+.buttonDark:hover {
+    color: $bodycolor-dark;
+    background-color: $bodycolor-highlight;
+    border-color: $bodycolor-highlight;
+}
+
+.buttonDark:visited {
+    @include button;
+    color: $bodycolor-dark;
+    border-color: $bodycolor-dark;
+}
+
+/* BUTTON BODY */ 
+
+.bodyButton {
+    @include button;
+    border-color: transparent;
+    padding: 0px;
+
+    a:link{
+        text-decoration: none;
+        color: $bodycolor-secondary;
+    }
+
+    a:hover{
+        color: $bodycolor-highlight;
+    }
+}
+
+/* BUTTON SECONDARY Utilizado para Cards*/ 
+
+.secondaryButton {
+    @include button();
+    border-color: $bodycolor-secondary;
+    color: $bodycolor-secondary;
+
+    a:link{
+        color: $bodycolor-secondary;
+        text-decoration: none;
+    }
+}
+.secondaryButton:hover{
+    color: $bodycolor-dark;
+    border-color: $bodycolor-secondary;
+    background-color: $bodycolor-secondary;
+    text-decoration: none;
+}
+
+
+/* BACKROUNDS */
+
+.greyBackround{
+    background-color: $backroundcolor-grey;
+}
+
+.whiteBackround{
+    background-color: $backroundcolor-light;
+}
+
+
+.backroundForm{
+
+    background-color: $backroundcolor-dark;
+    color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 5px -10px 10px lightgrey;
+    padding: 25px;
+    padding-top: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.darkBackround{
+    background-color: $backroundcolor-dark;
+    
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    padding: 20px 10px 0px 10px;
+    background-color: $backroundcolor-dark;
+
+    h5{
+        font-family: 'Poppins', sans-serif;
+        font-size: map-get($map: $font-sizes, $key: medium);
+        color: $subtitlecolor-dark;
+        margin-top: 10px;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: map-get($map: $font-sizes, $key: xsmall);
+        margin: 0;
+        color: $bodycolor-dark;
+    }
+}
+
+.footer-copyright{
+    padding: 20px !important;
+    text-align: center;
+
+}
+
+footer li{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: $bodycolor-dark;
+    font-size: map-get($map: $font-sizes, $key: xsmall);
+}
+
+/* FOOTER Pseudoclasses */
+
+footer a:link {
+    color: #ffffff;
+    text-decoration:none;
+}
+
+footer a:visited {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #EA4138;
+}
