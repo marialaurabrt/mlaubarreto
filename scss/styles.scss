@@ -285,6 +285,7 @@ h2{
     @include button;
     border-color: transparent;
     padding: 0px;
+    overflow: visible;
 
     a:link{
         text-decoration: none;
@@ -302,6 +303,7 @@ h2{
     @include button();
     border-color: $bodycolor-secondary;
     color: $bodycolor-secondary;
+    overflow: visible;
 
     a:link{
         color: $bodycolor-secondary;

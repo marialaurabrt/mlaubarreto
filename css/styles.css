@@ -239,7 +239,8 @@ h2 {
   text-align: center;
   transition: all 0.5s;
   border-color: transparent;
-  padding: 0px; }
+  padding: 0px;
+  overflow: visible; }
   .bodyButton a:link {
     text-decoration: none;
     color: #603DE0; }
@@ -257,7 +258,8 @@ h2 {
   text-align: center;
   transition: all 0.5s;
   border-color: #603DE0;
-  color: #603DE0; }
+  color: #603DE0;
+  overflow: visible; }
   .secondaryButton a:link {
     color: #603DE0;
     text-decoration: none; }
